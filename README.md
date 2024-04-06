@@ -9,7 +9,10 @@ To download this repository as a zip archive use this link:
   - https://github.com/BainbridgeArtisanResourceNetwork/xtool-f1-laser-intro/archive/refs/heads/main.zip
 
 Software for the Intro class:
-  - https://www.xtool.com/pages/software - Xtool XCS software used to work with the laser (needed for class)
+  - https://www.xtool.com/pages/software - Xtool XCS software used to work with the laser (needed for class). 
+  	The version we're currently using is v1.7.8, but the web site, along with a large amount of visual noise, gives you a 
+  	more recent beta test version by default. Please follow these instructions to download the earlier version.
+  	(We will also have them available during the class for immediate installation.)
     - Click the Download button - this will scroll you down some on the page
     - Scroll down further until you see the pane of buttons to download for different systems - do NOT select them as they are for
       a beta version which has a lot of extra stuff.
