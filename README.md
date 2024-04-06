@@ -3,6 +3,9 @@ Introduction to the XTool F1 laser - supporting files and documents.
 
 Files and documents useful for using the F1 laser at BARN, especially intended to support the Introduction to the F1 laser class.
 
+If you're taking the class, and have a laptop computer, you can install the software we will be using ahead of time.
+This will enable you to work along in the class more easily. (We have a small number of computers that will be available too.)
+
 # Useful Links
 
 To download this repository as a zip archive use this link:
