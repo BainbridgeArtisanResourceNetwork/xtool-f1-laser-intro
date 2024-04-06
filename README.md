@@ -10,6 +10,11 @@ To download this repository as a zip archive use this link:
 
 Software for the Intro class:
   - https://www.xtool.com/pages/software - Xtool XCS software used to work with the laser (needed for class)
+    - Click the Download button - this will scroll you down some on the page
+    - Scroll down until you see the pane of buttons to download for different systems - do NOT select them as they are for
+      a beta version which has a lot of extra stuff.
+    - click the small "Previous Versions" below that panel - this will provide more options
+    - specifically we want v1.7.8 - click the button for your system type and install that.
   - https://inkscape.org - to create/edit SVG files directly (optional for class)
 
 Laser Safety Information:
