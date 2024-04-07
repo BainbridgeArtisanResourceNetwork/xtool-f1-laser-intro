@@ -71,6 +71,14 @@ Tutorial Outline
 	
 # Material testing
 
+## Standard Settings for most jobs:
+
+	- without anything selected, in the RHS panel check that these settings are on:
+		- `Laser Flat`
+		- `Material`: User defined
+		- `Thickness`: Use autofocus before init
+		- `Processing Path`: Auto planning
+
 ## Building a material test for paper
 
 	- draw a circle or rectangle on canvas, typically around 5 mm
@@ -148,6 +156,7 @@ Tutorial Outline
 		- paths are imported correctly, but
 			- stroke is rendered, stroke width and fill is ignored
 			- complex vector paths (brush stroke example) will show the path artifacts 
+			- curved vector paths that are not closed paths need to be scored not engraved
 			
 		- text converted to paths is imported correctly
 			- text using a font, is not rendered
@@ -166,6 +175,8 @@ We'll add custom text to the card.
 We will then score and cut a paper backing to hold the card.
 
 ## Build and Save aluminum job
+
+Here are detailed steps to setup a job for aluminum card engraving.
 
 	- prepare the project for the material size:
 		- launch XCS and open project template-files/blank-f1-project.XCS
@@ -219,10 +230,102 @@ We will then score and cut a paper backing to hold the card.
 		
 		
 
-## build and Save paper job
+## Build and Save paper job
 
+Here we'll build the paper frame backing. Much of the steps are similar to the prior job, so these instructions will
+concentrate more on the differences.
+
+
+	- prepare the project for the material size:
+		- launch XCS and open project template-files/blank-f1-project.XCS
+		- use Save As to save this project to a new location with name of your choice
+		- select the rectangle tool, and draw out a rectangle on the canvas
+		- in the upper toolbar:
+			- select the "lock" button to unlock it the dimensions,
+			- type in width 112.5mm, height 92.5mm, and
+			- select the lock button again to lock the dimension (proportions)
+		- set the Output Settings to Ignore. 
+		- import the image template for the card to use for positioning
+			- location templates/template-card-86x54.SVG
+		- place the image on the canvas inside of the larger rectangle, roughly centered.
+		- move the smaller rectangle to the same layer as the larger one (probably Layer 1)
+		- select that layer, rename it to "backgound" and ensure that Output settings are set to "ignore"
+		- Save the project file
+
+	- setup graphics to be 'drawn' on the page
+		- there are some SVG files in the graphics-files directory, feel free to position ones you like on your canvas
+			- keep in mind that we're going place the card into the frame so get things positioned the way you like.
+		- once you've imported 1 graphic, move it to a new layer, and rename that layer "line graphics"
+		- import any other graphics you want, keeping them in that same layer
+		- once finished, select the layer, and apply these settings to it:
+			- `Object setting`: output
+			- `Laser type`: Blue light
+			- `Processing type`: score
+			- `Power`: 45%
+			- `Speed`: 30 mm/s
+			- `Pass`: 1
+			
 	
+	- setup cut lines to be used to hold the card in the frame
+		- using the Line tool, draw a line at a roughly 45° angle, across the top left corner of the inner rectangle
+			- the intent is that this corner of the card fill slide into the line cut here, so position appropriately
+			- bounding box should be approximately 10mm x 10mm.
+		- move the selected line to a new layer, rename the layer to "cut lines"
+		- select the line, copy/paste to create a duplicate and drag it over to the top right corner
+		- in the top toolbar, select Reflect -> Reflect horizontally, then move the line to an appropriate position
+		- copy/paste the top right line, drag to the lower right corner, use Reflect -> Reflect vertically and adjust position.
+		- copy/paste the bottom right line, drag to the lower left corner, use Reflect -> Reflect horizontally and adjust
+		- with the layer selected, set the Object settings to match:
+			- `Object setting`: output
+			- `Laser type`: Blue light
+			- `Processing type`: cut
+			- `Power`: 40%
+			- `Speed`: 10 mm/s
+			- `Pass`: 1
+			
+	- setup layer planning so that cut lines go last
+		- not necessary for this job, but can be useful for more complex jobs
+		- without anything selected, in the RHS panel set P`rocessing Path` to 'By Layer'.
+		- rearrange the order of the layers in the layer palette by drawing the "cut lines" below the "line graphics"
+			- this will cause cut lines to happen after all of the prior layers are scored
+			
+		- Save your Project
 
+		
+# Setup and run the job
+
+Using the files from the previous section, we will run the jobs on the laser.
+(If you don't have a completed project file, you can use the ones found in the examples/ directory:
+ 'example-card-and-frame-metal-only.xcs' has the metal parts enabled, and example-card-and-frame-paper-only.xcs has the paper
+ parts enabled.)
 	
+	- Common Laser Job steps
+		- turn on the laser
+		- open XCS, and wait for it to connect to the laser
+		- verify that all safeties are on AND that IR Preheat is on
+		
+	- Setup Materials
+		- open lid and place material on the bed
+		- focus the laser using the RHS knob until the red/blue dots converge on the material
+		- open your project File
+		- select the Framing button - and position either the material and/or your artwork to desired position
+		- Stop Framing
+		- Close the lid, being careful not to move your material.
+			- some small/light materials may need to be taped down.
+			
+	- Run the job
+		- Select the Process button
+		- if the contents of he Preview look okay, select the Start button in the top right of the window.
+		- Press the knob on the upper right of the laser unit
+		- wait for the job to complete
+		- lift lid, remove material, and evaluate results
+		- if you want to make another one at this time, you could,
+			- at least if you've put some sort of alignment tape/jig on the bed
+		-  otherwise cancel the Preview and go back to the canvas.
+		
+	- Repeat the above setups (setup materials and run the job) for the paper and metal project.
+		- order does not matter, just make sure you have the correct job for the selected material!
+		
 
-	  
+		
+		
