@@ -54,16 +54,20 @@ Tutorial Outline
 # Laser settings
 
 	- vector scoring - draw the outline of the objects on canvas - usually very quickly
+		- variables: power, speed, passes
 	- vector engraving - draw and fill the objects on canvas - measured in lines/cm so slower
+		- variables: power, speed, passes, lines/cm
 	- vector cut - when you want to cut through the material
+		- variables: power, speed, pases
 	- raster engrave - when you want to "print" a raster image using the laser
+		-variables: dot duration, power, DPI, passes, bitmap mode, engraving mode
 	
 # Material settings
 
-	- material settings page is a good place to start
+	- Xtool material settings page is a good place to start
 	- presets can be selected, but should be confirmed for your material
 	- constructing a material test grid is a good way to quickly zero in on appropriate settings
-	- you can only adjust by two variables - power and speed
+	- you can only adjust by two variables - power and speed (or dot duration and speed for bitmap)
 	
 # Material testing
 
@@ -131,13 +135,93 @@ Tutorial Outline
 	  
 # Example of importing SVG graphics
 
+	- from a web browser (or Inkscape if installed)
+		- open the file graphics-files/combo-example-01.svg
+		- note what the image looks like on screen
+
+	- in XCS
+		- open a new project 
+		- select Image import from the left toolbar and select the file graphics-files/combo-example-01.svg
+		- note what the imported image looks like
+		
+	# Detailed difference notes:
+		- paths are imported correctly, but
+			- stroke is rendered, stroke width and fill is ignored
+			- complex vector paths (brush stroke example) will show the path artifacts 
+			
+		- text converted to paths is imported correctly
+			- text using a font, is not rendered
+		
+		- layers are counter-intuitive
+			- actual Inkscape layers are SVG groups
+			- XCS groups into its own layers using the stroke color
+		
+		- imported raster images are rendered fine
+			- selecting these open up a "bitmap image" toolbar
+
 # Class Project
+
+We're going to engrave an aluminum business card using imported vector graphics. 
+We'll add custom text to the card.
+We will then score and cut a paper backing to hold the card.
 
 ## Build and Save aluminum job
 
+	- prepare the project for the material size:
+		- launch XCS and open project template-files/blank-f1-project.XCS
+		- use "save as" to save this project to a new location with name of your choice
+		- import the image file templates/template-card-86x54.SVG
+		- place the image somewhere near the center of the frame
+		- with the object select, in the RHS toolbar set the Object Setting to "Ignore"
+		- rename the Layer 1 name to "card outline"
+		- save the project 
+	
+	- import a vector image into the Project
+		- import one of the SVG graphics files from graphics-files/ directory
+		- drag the selected object to within the card outline area
+		- note that its on its own layer, you can rename this to "graphics"
+		- set the 
+		
+	- add text directly
+		- select the Text tool
+			- this drops a big block of text ("HELLO") on your project and opens a Text panel on the right
+		- set the text value in this panel to something ("Established 1977" with a linebreak in the example.)
+		- set the text size (in points) to something that will fit in your space (14 pt in the example)
+		- drag the selected text to a place you want it, and adjust the size to make it fit
+		- set the typeface and style to something you like, and tweak settings to get what you want.
+		- leave Spacing and Leading set to 0 for default settings
+			- Spacing is the space between characters (kerning)
+			- Leading is the space between lines
+			- both can be positive or negative values
+		- set Alignment as you prefer
+		- do NOT select "Weld" as this will permanently fix the text to thest settings
+		
+	- add another text 
+		- repeating the above actions, put another block of text with your name in it
+		- format this text to fit into whatever space you want for the design
+		- you might need to play with the leading (space beween lines)
+		
+	- adjust the layer settings
+		- note that the two text blocks came in as "black" color, and are assigned to "Layer 2"
+		- rename the layer to "text and graphics"
+		- with this layer selected, use the Object Settings panel to these values:
+			- `Output` selected
+			- `Processing type`: engrave
+			- `Setting`: Manual setting
+			- `Laser type`: IR
+			- `Power`: 100%
+			- `Speed`: 655 mm/s
+			- `Pass`: 1
+			- `Lines per cm`: 220
+			- `Engraving mode`: Bidirectional
+			
+		- Save your Project
+		
+		
+
 ## build and Save paper job
 
-
+	
 
 	
 
