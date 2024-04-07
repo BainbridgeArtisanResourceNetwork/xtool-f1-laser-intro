@@ -177,6 +177,9 @@ We're going to engrave an aluminum business card using imported vector graphics.
 We'll add custom text to the card.
 We will then score and cut a paper backing to hold the card.
 
+The project we will build looks something like this:
+[engraved metal card on paper](./tutorial-project-example.png)
+
 ## Build and Save aluminum job
 
 Here are detailed steps to setup a job for aluminum card engraving.
