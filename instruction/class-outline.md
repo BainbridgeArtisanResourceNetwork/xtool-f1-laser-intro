@@ -237,7 +237,7 @@ concentrate more on the differences.
 
 
 	- prepare the project for the material size:
-		- launch XCS and open project template-files/blank-f1-project.XCS
+		- launch XCS and open project `template-files/blank-f1-project.XCS`
 		- use Save As to save this project to a new location with name of your choice
 		- select the rectangle tool, and draw out a rectangle on the canvas
 		- in the upper toolbar:
@@ -253,7 +253,7 @@ concentrate more on the differences.
 		- Save the project file
 
 	- setup graphics to be 'drawn' on the page
-		- there are some SVG files in the graphics-files directory, feel free to position ones you like on your canvas
+		- there are some SVG files in the `graphics-files/` directory, feel free to position ones you like on your canvas
 			- keep in mind that we're going place the card into the frame so get things positioned the way you like.
 		- once you've imported 1 graphic, move it to a new layer, and rename that layer "line graphics"
 		- import any other graphics you want, keeping them in that same layer
@@ -272,9 +272,9 @@ concentrate more on the differences.
 			- bounding box should be approximately 10mm x 10mm.
 		- move the selected line to a new layer, rename the layer to "cut lines"
 		- select the line, copy/paste to create a duplicate and drag it over to the top right corner
-		- in the top toolbar, select Reflect -> Reflect horizontally, then move the line to an appropriate position
-		- copy/paste the top right line, drag to the lower right corner, use Reflect -> Reflect vertically and adjust position.
-		- copy/paste the bottom right line, drag to the lower left corner, use Reflect -> Reflect horizontally and adjust
+		- in the top toolbar, select `Reflect` ->` Reflect horizontall`y, then move the line to an appropriate position
+		- copy/paste the top right line, drag to the lower right corner, use `Reflect` -> `Reflect vertically` and adjust position.
+		- copy/paste the bottom right line, drag to the lower left corner, use `Reflect` -> `Reflect horizontally` and adjust
 		- with the layer selected, set the Object settings to match:
 			- `Object setting`: output
 			- `Laser type`: Blue light
@@ -285,7 +285,7 @@ concentrate more on the differences.
 			
 	- setup layer planning so that cut lines go last
 		- not necessary for this job, but can be useful for more complex jobs
-		- without anything selected, in the RHS panel set P`rocessing Path` to 'By Layer'.
+		- without anything selected, in the RHS panel set `Processing Path` to `By Layer``.
 		- rearrange the order of the layers in the layer palette by drawing the "cut lines" below the "line graphics"
 			- this will cause cut lines to happen after all of the prior layers are scored
 			
@@ -295,8 +295,8 @@ concentrate more on the differences.
 # Setup and run the job
 
 Using the files from the previous section, we will run the jobs on the laser.
-(If you don't have a completed project file, you can use the ones found in the examples/ directory:
- 'example-card-and-frame-metal-only.xcs' has the metal parts enabled, and example-card-and-frame-paper-only.xcs has the paper
+(If you don't have a completed project file, you can use the ones found in the `examples/` directory:
+ `example-card-and-frame-metal-only.xcs` has the metal parts enabled, and `example-card-and-frame-paper-only.xcs` has the paper
  parts enabled.)
 	
 	- Common Laser Job steps
@@ -314,8 +314,8 @@ Using the files from the previous section, we will run the jobs on the laser.
 			- some small/light materials may need to be taped down.
 			
 	- Run the job
-		- Select the Process button
-		- if the contents of he Preview look okay, select the Start button in the top right of the window.
+		- Select the `Process` button
+		- if the contents of he Preview look okay, select the `Start` button in the top right of the window.
 		- Press the knob on the upper right of the laser unit
 		- wait for the job to complete
 		- lift lid, remove material, and evaluate results
