@@ -14,7 +14,7 @@ To download this repository as a zip archive use this link:
 Outline for the full tutorial:
   - local reference: ./instruction/class-outline.md
   - [Tutorial Class Outline](./instruction/class-outline.md)
-  - 
+
 Software for the Intro class:
   - https://www.xtool.com/pages/software - Xtool XCS software used to work with the laser (needed for class). 
   	The version we're currently using is v1.7.8, but the web site, along with a large amount of visual noise, gives you a 
