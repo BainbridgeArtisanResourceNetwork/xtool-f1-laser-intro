@@ -11,6 +11,10 @@ This will enable you to work along in the class more easily. (We have a small nu
 To download this repository as a zip archive use this link:
   - https://github.com/BainbridgeArtisanResourceNetwork/xtool-f1-laser-intro/archive/refs/heads/main.zip
 
+Outline for the full tutorial:
+  - local reference: ./instruction/class-outline.md
+  - [Tutorial Class Outline](./instruction/class-outline.md)
+  - 
 Software for the Intro class:
   - https://www.xtool.com/pages/software - Xtool XCS software used to work with the laser (needed for class). 
   	The version we're currently using is v1.7.8, but the web site, along with a large amount of visual noise, gives you a 
