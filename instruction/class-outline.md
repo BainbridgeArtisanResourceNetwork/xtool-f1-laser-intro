@@ -1,5 +1,8 @@
 Tutorial Outline
 
+This is a highly detailed step-by-step outline designed to guide the student through the process of preparing jobs as well as 
+operating the F1 laser.
+
 # Intro to the F1 laser
 
   - this is a 10W diode laser (blue) and a 2W infrared laser (green)
@@ -34,11 +37,11 @@ Tutorial Outline
 
 # XCS Interface
 
-  - top left: choose inches or mm
+  - top left: choose inches or mm (we'll assume mm in this tutorial)
   - [keyboard shortcuts](https://support.xtool.com/article/132)
   - File/Project controls (ignore the Cloud Projects tool)
-  - Left side - tools for placing objects onto the main canvas
-  - Top bar - controls for manipulating objects on the canvas
+  - Left toolbar - tools for placing objects onto the main canvas
+  - Top toolbar - controls for manipulating objects on the canvas
   - Right side - controls for manipulating laser settings
   - Bottom right: preview (Framing) and run (Process) the job
   - floating layers palette for grouping objects with similar settings
@@ -326,6 +329,15 @@ Using the files from the previous section, we will run the jobs on the laser.
   - Repeat the above setups (setup materials and run the job) for the paper and metal project.
     - order does not matter, just make sure you have the correct job for the selected material!
     
+    
+# Where to go from here
 
-    
-    
+Ona area that we have not explored in this introductory material is using engraving into metals. 
+While the results are promising, they take awhile - a small piece of metal can easily require 20 minutes.
+This is due to the slow speeds required, as well as the fine level of detail (lines/cm or DPI).
+
+
+Another area is the engraving of raster images. Here one must experiment with the dot duration and the speed, along with the
+algorithm used to establish the dot pattern. Again, these take time to process, too much for a single intro class.
+
+
