@@ -8,7 +8,8 @@ This will enable you to work along in the class more easily. (We have a small nu
 
 # Useful Links
 
-Instructor will provide a USB flash drive with the above files day of class, but feel free to install it sooner.
+Instructor will provide a USB flash drive with the required files day of class, but feel free to install it sooner.
+You should bring a laptop if available, limited computer workstations are available.
 
 To download this repository as a zip archive use this link:
   - https://github.com/BainbridgeArtisanResourceNetwork/xtool-f1-laser-intro/archive/refs/heads/main.zip
