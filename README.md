@@ -6,10 +6,10 @@ Files and documents useful for using the F1 laser at BARN, especially intended t
 If you're taking the class, and have a laptop computer, you can install the software we will be using ahead of time.
 This will enable you to work along in the class more easily. (We have a small number of computers that will be available too.)
 
-# Useful Links
-
 Instructor will provide a USB flash drive with the required files day of class, but feel free to install it sooner.
-You should bring a laptop if available, limited computer workstations are available.
+
+
+# Useful Links
 
 To download this repository as a zip archive use this link:
   - https://github.com/BainbridgeArtisanResourceNetwork/xtool-f1-laser-intro/archive/refs/heads/main.zip
