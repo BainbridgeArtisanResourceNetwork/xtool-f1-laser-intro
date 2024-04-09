@@ -8,6 +8,8 @@ This will enable you to work along in the class more easily. (We have a small nu
 
 # Useful Links
 
+Instructor will provide a USB flash drive with the above files day of class, but feel free to install it sooner.
+
 To download this repository as a zip archive use this link:
   - https://github.com/BainbridgeArtisanResourceNetwork/xtool-f1-laser-intro/archive/refs/heads/main.zip
 
@@ -16,6 +18,7 @@ Outline for the full tutorial:
   - [Tutorial Class Outline](./instruction/class-outline.md)
 
 Software for the Intro class:
+  
   - https://www.xtool.com/pages/software - Xtool XCS software used to work with the laser (needed for class). 
   	The version we're currently using is v1.7.8, but the web site, along with a large amount of visual noise, gives you a 
   	more recent beta test version by default. Please follow these instructions to download the earlier version.
@@ -28,6 +31,7 @@ Software for the Intro class:
   - https://inkscape.org - to create/edit SVG files directly (optional for class)
     - select the Download item for "current stable version" (1.3.2 as of this writing)
     - for 1.3.2 the link is https://inkscape.org/release/inkscape-1.3.2/
+    
 
 Laser Safety Information:
   - https://support.xtool.com/article/34?from=xTool+F1&url=/product/2 - general laser safety information
