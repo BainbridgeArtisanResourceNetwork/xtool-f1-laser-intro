@@ -61,13 +61,14 @@ operating the F1 laser.
   - vector engraving - draw and fill the objects on canvas - measured in lines/cm so slower
     - variables: power, speed, passes, lines/cm
   - vector cut - when you want to cut through the material
-    - variables: power, speed, pases
+    - variables: power, speed, passes
   - raster engrave - when you want to "print" a raster image using the laser
     -variables: dot duration, power, DPI, passes, bitmap mode, engraving mode
   
 # Material settings
 
   - Xtool material settings page is a good place to start
+    - [Material Settings Page](https://www.xtool.com/pages/material-settings) 
   - presets can be selected, but should be confirmed for your material
   - constructing a material test grid is a good way to quickly zero in on appropriate settings
   - you can only adjust by two variables - power and speed (or dot duration and speed for bitmap)
