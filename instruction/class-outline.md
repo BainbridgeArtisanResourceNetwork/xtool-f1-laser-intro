@@ -243,7 +243,8 @@ and provide a similar, if somewhat different organization of the UI.
     - select Image import from the left toolbar and select the file graphics-files/combo-example-01.svg
     - note what the imported image looks like
     
-  # Detailed difference notes:
+# Detailed difference notes:
+
     - paths are imported correctly, but
       - stroke is rendered, stroke width and fill is ignored
       - complex vector paths (brush stroke example) will show the path artifacts 
@@ -378,7 +379,7 @@ concentrate more on the differences.
       - `Pass`: 1
       
   - setup layer planning so that cut lines go last
-    - NOTE not sure where this is changeable in XCS 2.x
+    - in XCS 2.8, this has moved to the '...' following `Go to Process`
     - not necessary for this job, but can be useful for more complex jobs
     - without anything selected, in the RHS panel set `Processing Path` to `By Layer`.
     - rearrange the order of the layers in the layer palette by drawing the "cut lines" below the "line graphics"
