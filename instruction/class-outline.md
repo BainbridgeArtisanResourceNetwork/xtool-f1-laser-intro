@@ -174,7 +174,8 @@ and provide a similar, if somewhat different organization of the UI.
 ## Building a material test for paper
 
 	Note: if you find material setting ranges for the F1 visible, you can usually start with
-	higher speed, lower power percentage, and/or feweer passes to get a starting range for the F1 Ultra.
+	higher speed, lower power percentage, and/or feweer passes to get a starting range for the
+	F1 Ultra.
 	
   - draw a circle or rectangle on canvas, typically around 5-10 mm
   - with object selected:
@@ -277,22 +278,22 @@ In XCS 2, there has been positive changes on importing SVG images.
 
 ### SVG in XCS 2.*
 
-	- paths are imported correctly
-	- text is imported correctly, but the font specified may be substituted, even if installed
-	  - render text to paths before importing if you want to preserve a specific typeface
-	- raster images import fine
-	- objects are sorted into different layers based upon color, the SVG layer groups are ignored
+  - paths are imported correctly
+  - text is imported correctly, but the font specified may be substituted, even if installed
+	- render text to paths before importing if you want to preserve a specific typeface
+  - raster images import fine
+  - objects are sorted into different layers based upon color, the SVG layer groups are ignored
 	
 ### SVG in XCS 1.7.8
   
-    - paths are mostly imported correctly, with the following caveats:
-      - stroke is rendered, but stroke width and fill are ignored
-      - complex vector paths (brush stroke example) will show the path artifacts 
-        - but with engrave mode the effect can be restored
-      - curved vector paths that are not closed paths usually need to be scored not engraved	  
-    - text using a font, is not rendered in XCS 1.7.8
-    - objects are sorted into different layer groups based upon color
-    - imported raster images are rendered fine
+  - paths are mostly imported correctly, with the following caveats:
+    - stroke is rendered, but stroke width and fill are ignored
+    - complex vector paths (brush stroke example) will show the path artifacts 
+      - but with engrave mode the effect can be restored
+    - curved vector paths that are not closed paths usually need to be scored not engraved	  
+  - text using a font, is not rendered in XCS 1.7.8
+  - objects are sorted into different layer groups based upon color
+  - imported raster images are rendered fine
 
 # Class Project
 
