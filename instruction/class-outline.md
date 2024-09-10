@@ -24,7 +24,7 @@ operating the F1/F1 Ultra laser.
 ## F1 Ultra laser specifics
 
   - this is a 20W diode laser (blue) and a 20W fiber IR laser (green)
-    - the dioda laser can mark or etch many materials, and can cut many organics
+    - the diode laser can mark or etch many materials, and can cut many organics
     - the fiber laser can mark or etch many metals, and can cut some thing metals,
       but it takes time. 
       - We've managed to cut aluminum, brass, and stainless steel so far.
