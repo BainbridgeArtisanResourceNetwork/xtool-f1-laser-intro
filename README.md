@@ -1,7 +1,8 @@
-# XTool-F1-laser-intro
-Introduction to the XTool F1 laser - supporting files and documents.
+# XTool F1/F1 Ultra laser intro
 
-Files and documents useful for using the F1 laser at BARN, especially intended to support the Introduction to the F1 laser class.
+Introduction to the XTool F1 and F1 Ultra lasers - supporting files and documents.
+
+Files and documents useful for using the F1 series lasers at BARN, especially intended to support the Introduction to the F1 laser class.
 
 If you're taking the class, and have a laptop computer, you can install the software we will be using ahead of time.
 This will enable you to work along in the class more easily. (We have a small number of computers that will be available too.)
@@ -16,27 +17,34 @@ To download this repository as a zip archive use this link:
 
 Outline for the full tutorial:
   - local reference: ./instruction/class-outline.md
-  - [Tutorial Class Outline](./instruction/class-outline.md)
+  - [F1 Tutorial Class Outline](./instruction/class-outline.md)
+  - [F1 Ultra Tutorial Class Outline](./instruction/f1-ultra-class-outline.md)
 
 Software for the Intro class:
   
-  - https://www.xtool.com/pages/software - Xtool XCS software used to work with the laser (needed for class). 
-  	The version we're currently using is v1.7.8, but the web site, along with a large amount of visual noise, gives you a 
-  	more recent beta test version by default. Please follow these instructions to download the earlier version.
-  	(We will also have them available during the class for immediate installation.)
-    - Click the Download button - this will scroll you down some on the page
-    - Scroll down further until you see the pane of buttons to download for different systems - do NOT select them as they are for
-      a beta version which has a lot of extra stuff.
-    - click the small "Previous Versions" below that panel - this will provide more options
-    - specifically we want v1.7.8 - click the button for your system type and install that.
-  - https://inkscape.org - to create/edit SVG files directly (optional for class)
+  - [Xtool Creative Space (XCS)](https://www.xtool.com/pages/software) 
+  	- Xtool XCS software used to work with the laser (needed for class).
+    - For the F1 laser, you may use either v1.7.8 or the newer 2.0 series, but
+    - for the F1 Ultra laser, you need to use the new 2.0 series only
+    - Because Windows doesn't support multiple versions installed, we'll be using the latest version
+      the studio.
+    - Click the Download button - and choose the appropriate version for your computer.
+    - Note: there is a User Acceptance Test version available - we'll provide it during the class.
+  - [Inkscape](https://inkscape.org) - to create/edit SVG files directly (optional for class)
     - select the Download item for "current stable version" (1.3.2 as of this writing)
     - for 1.3.2 the link is https://inkscape.org/release/inkscape-1.3.2/
-    
 
 Laser Safety Information:
   - https://support.xtool.com/article/34?from=xTool+F1&url=/product/2 - general laser safety information
+  - https://support.xtool.com/ - find the Safety button on that page for general laser safety information
   - https://www.lasersafetyfacts.com/4/ - detailed safety information regarding Class 4 (exposed) lasers
 
 Other useful links:
-  - https://www.xtool.com/pages/material-settings - material settings guidelines
+  - [Software Learning Center](https://support.xtool.com/learning-center)
+  - https://mt.xtool.com - the older updated Materials Library - for F1 settings and more.
+  - https://www.xtool.com/pages/material-settings - material settings info (older, for F1 but still useful.)
+
+F1 Ultra Additions
+  - [Support for xTool F1 Ultra](https://support.xtool.com/product/33)
+  - [xTool F1 Ultra LSO Training](https://support.xtool.com/article/1321)
+  - [xTool Creative Space v2.0 Tutorial](https://support.xtool.com/learning-center/collection/33)
