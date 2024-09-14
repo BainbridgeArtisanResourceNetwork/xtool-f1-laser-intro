@@ -24,13 +24,12 @@ Software for the Intro class:
   
   - [Xtool Creative Space (XCS)](https://www.xtool.com/pages/software) 
   	- Xtool XCS software used to work with the laser (needed for class).
-    - For the F1 laser, you may use either v1.7.8 or the newer 2.0 series, but
-    - for the F1 Ultra laser, you need to use the new 2.0 series only
+    - For the F1 laser, you may use either v1.7.8 or the newer 2.x series, but
+    - for the F1 Ultra laser, you need to use the new 2.x series only
     - Because Windows doesn't support multiple versions installed, we'll be using the latest version
-      the studio.
+      in the studio 
     - Click the Download button - and choose the appropriate version for your computer.
-    - Note: there is a User Acceptance Test version available - we'll provide it during the class.
-  - [Inkscape](https://inkscape.org) - to create/edit SVG files directly (optional for class)
+    - [Inkscape](https://inkscape.org) - to create/edit SVG files directly (optional for class)
     - select the Download item for "current stable version" (1.3.2 as of this writing)
     - for 1.3.2 the link is https://inkscape.org/release/inkscape-1.3.2/
 
