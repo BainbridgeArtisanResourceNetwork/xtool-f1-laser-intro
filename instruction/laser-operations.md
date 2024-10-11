@@ -4,7 +4,7 @@
   - Studio monitors should ensure both fan switches are on in Jewelry
   - turn on both fan switches in the lab
   - make sure there is a window or door open in the outer studio
-  - turn on the laser (if it doesn't start check the Emergency Shutoff button)
+  - turn on only 1 laser (if it doesn't start check the Emergency Shutoff button)
   - launch the XCS application and connect it to the laser (top right panel)
   - click the gear icon and make sure that all safeties are enabled
   - open Settings (top left) and in Device Settings perform the `Z Homing` action
@@ -22,8 +22,8 @@
 - Make sure the lid is closed
 - select `Process` button on lower right to preview the job
 - examine the preview and make sure output matches your expectations
-- select `start` at top right to send the job to the laser controller
-- when the laser controller says "ready" select the button at the bottom to start the laser
+- select `Start` at top right to send the job to the laser controller
+- when the laser controller says "ready" press the wide green button at the bottom to start the laser
 - stay with the laser while operating
 - it will beep and obviously stop when done
 - open the lid and examine the work piece w/o moving it
