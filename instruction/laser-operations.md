@@ -1,15 +1,27 @@
-# Operating the XTool F1 Ultra laser
+---
+marp: true
+---
 
-## Powering Up
-  - Studio monitors should ensure both fan switches are on in Jewelry
+# Operating the XTool laser
+
+## Studio Monitor Setup
+
+  - Studio monitors should ensure Jewelry fans are on
   - turn on both fan switches in the lab
   - make sure there is a window or door open in the outer studio
-  - turn on only 1 laser (if it doesn't start check the Emergency Shutoff button)
+  - ensure user operations are performed safely.
+
+---
+
+## Powering Up
+
+  - turn on only 1 laser 
   - launch the XCS application and connect it to the laser (top right panel)
   - click the gear icon and make sure that `all` safeties are enabled
-    - if you need to operate without lid safety consult with the Studio Monitor to
-      make sure that safe operation can be maintained. Do NOT just turn it off!
+    - if you want to operate without lid safety enabled consult with the Studio Monitor to make sure that safe operation can be maintained. Do NOT just turn it off!
   - open Settings (top left) and in Device Settings perform the `Z Homing` action
+
+---
 
 ## Job Preparation in XCS
  - select your material and place securely on the bed
@@ -20,7 +32,10 @@
    - use Framing/Stop Framing (bottom right panel) 
    - or use Preview (camera icon, top right button)
 
+---
+
 ## Job Start
+
 - Make sure the lid is closed
 - select `Process` button on lower right to preview the job
 - examine the preview and make sure output matches your expectations
@@ -31,7 +46,10 @@
 - open the lid and examine the work piece w/o moving it
 - if it needs another pass, close the lid and double-click the laser controller button
 
+---
+
 ## Powering Down
+
 - Save your work if you want to keep it
 - quit XCS
 - turn off the laser
