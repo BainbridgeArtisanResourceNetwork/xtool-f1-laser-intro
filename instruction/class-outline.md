@@ -1,8 +1,9 @@
+---
 Tutorial Outline
 
 This is a highly detailed step-by-step outline designed to guide the student through the process of preparing jobs as well as 
 operating the F1/F1 Ultra laser.
-
+---
 
 # Intro to the F1 lasers
 
@@ -12,7 +13,8 @@ operating the F1/F1 Ultra laser.
   - the visible light lasers can oxidize the surface of some metals (stainless steel, titanium) to
     to produce color effects (blues, greens, reds, warm browns.)
   - very fine detail is possible
-  
+
+ --- 
 ## F1 laser specifics
 
  - this is a 10W diode laser (blue) and a 2W infrared laser (green)
@@ -21,6 +23,7 @@ operating the F1/F1 Ultra laser.
  - it has a 4 inch square work area, with a removable base
  - it has its own attached air cleaner, and is portable
 
+---
 ## F1 Ultra laser specifics
 
   - this is a 20W diode laser (blue) and a 20W fiber IR laser (green)
@@ -33,12 +36,15 @@ operating the F1/F1 Ultra laser.
   - there is an internal camera to assist in design/material alignment
   - it is currently vented through our ducting system
 
+---
 # Materials
 
   - visible lasers are effective on paper, cardboard, acrylic, light wood, stone, some metals
   - IR/fiber lasers are effective on stone and many metals: copper, brass, anodized aluminum, 
     stainless steel (and apparently gold and silver!)
 
+
+---
 # Safety
 
   - The energy in these lasers can permanently and irreversibly damage your retinas if not operated safely.
@@ -53,7 +59,9 @@ operating the F1/F1 Ultra laser.
   - You should inform the studio monitor of your desire to operate the laser in this manner, and they 
     can make the determination as to whether what you want to do can be done safely. 
   - the laser should not be left unattended while operating.
-  
+
+
+---
 # Setup and laser orientation
 
   - laser turned on
@@ -62,7 +70,7 @@ operating the F1/F1 Ultra laser.
     - all device settings have safety switches ENABLED
   - lid slides up to access the working area, slides down to completely enclose it.
 
-   
+---  
 ## F1 Laser
   
   - air purifier is connected, and sits near the laser (may be ducted outside too)
@@ -70,12 +78,14 @@ operating the F1/F1 Ultra laser.
   - top right button is used for focusing and for starting a job
   - confirm settings: all safety toggles on AND IR laser preheat on.
   
+---
 ## F1 Ultra Laser
   - all buttons are on the right side of the machine
   - emergency shutoff is on top, if depressed the machine won't power up, turn button to release the lock.
   - bottom right button is the power button
   - manual focusing and starting a job is done by a touchpad
   
+---
 # XCS Interface
 
 XCS is the Xtool Creative Space software that drives the laser. The older version only works with
@@ -83,6 +93,7 @@ the F1 model. The newer version is required to use the F1 Ultra and is compatibl
 The Windows machines in the lab only have the newer version installed, because it's Windows, but
 I've left the older instructions here for anyone still using the older version.
 
+---
 ## Operating Modes
 
   These are the modes available in both versions of XCS, with callouts specific for each machine.
@@ -97,6 +108,7 @@ I've left the older instructions here for anyone still using the older version.
     - more advanced usage, see 
     [Start Laser Embossing with XCS on the Computer](https://support.xtool.com/article/1325)
   
+---
 ## older version (XCS 17.8)
   - top left: choose inches or mm (we'll assume mm in this tutorial)
   - [keyboard shortcuts](https://support.xtool.com/article/132)
@@ -107,6 +119,7 @@ I've left the older instructions here for anyone still using the older version.
   - Bottom right: preview (Framing) and run (Process) the job
   - floating layers palette for grouping objects with similar settings
   
+---
 ## newer version (XCS 2.12.1 or higher)
 
 The newer versions of XCS have more of an online connection, but support the newer lasers
@@ -121,6 +134,7 @@ and provide a similar, if somewhat different organization of the UI.
   - right tool bar contain the laser settings (type, power, speed, etc)
   - when objects on the canvas are selected, tools to manipulate them are enabled at the top of the canvas
   
+---
 # Artwork Supported
 
   - vector files: SVG is the most typical
@@ -128,6 +142,7 @@ and provide a similar, if somewhat different organization of the UI.
   - vector files can be manipulated after import
   - raster images can be scaled, and traced after import
   
+---
 # Laser settings
 
   - vector scoring - draw the outline of the objects on canvas - usually very quickly
@@ -140,6 +155,7 @@ and provide a similar, if somewhat different organization of the UI.
   - variables: dot duration, power, DPI, passes, bitmap mode, engraving mode
   - image embossing 
     
+---
 # Material settings
 
   - Xtool material settings page is a good place to start
