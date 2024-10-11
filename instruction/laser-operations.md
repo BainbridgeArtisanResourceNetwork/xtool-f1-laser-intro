@@ -6,7 +6,9 @@
   - make sure there is a window or door open in the outer studio
   - turn on only 1 laser (if it doesn't start check the Emergency Shutoff button)
   - launch the XCS application and connect it to the laser (top right panel)
-  - click the gear icon and make sure that all safeties are enabled
+  - click the gear icon and make sure that `all` safeties are enabled
+    - if you need to operate without lid safety consult with the Studio Monitor to
+      make sure that safe operation can be maintained. Do NOT just turn it off!
   - open Settings (top left) and in Device Settings perform the `Z Homing` action
 
 ## Job Preparation in XCS
