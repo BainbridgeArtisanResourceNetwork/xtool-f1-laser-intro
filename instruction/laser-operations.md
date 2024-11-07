@@ -1,8 +1,9 @@
 ---
 marp: true
+paginate: true
+header: '**Operating the XTool Laser**'
+footer: 
 ---
-
-# Operating the XTool laser
 
 ## Studio Monitor Setup
 
@@ -12,7 +13,6 @@ marp: true
   - ensure user operations are performed safely.
 
 ---
-
 ## Powering Up
 
   - turn on only 1 laser 
@@ -22,7 +22,6 @@ marp: true
   - open Settings (top left) and in Device Settings perform the `Z Homing` action
 
 ---
-
 ## Job Preparation in XCS
  - select your material and place securely on the bed
  - use AutoMeasure to focus the laser
@@ -33,7 +32,6 @@ marp: true
    - or use Preview (camera icon, top right button)
 
 ---
-
 ## Job Start
 
 - Make sure the lid is closed
@@ -47,7 +45,6 @@ marp: true
 - if it needs another pass, close the lid and double-click the laser controller button
 
 ---
-
 ## Powering Down
 
 - Save your work if you want to keep it
