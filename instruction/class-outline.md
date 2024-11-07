@@ -3,8 +3,8 @@ Tutorial Outline
 
 This is a highly detailed step-by-step outline designed to guide the student through the process of preparing jobs as well as 
 operating the F1/F1 Ultra laser.
----
 
+---
 # Intro to the F1 lasers
 
   - we currently have 2 F1 lasers, with many common attributes
@@ -187,6 +187,7 @@ and provide a similar, if somewhat different organization of the UI.
     - set `thickness` OR use `automeasure` to focus or manually focus
     - select `Refresh background` with the camera icon (don't do this until ready for framing.)
       
+---
 ## Building a material test for paper
 
 	Note: if you find material setting ranges for the F1 visible, you can usually start with
@@ -206,6 +207,7 @@ and provide a similar, if somewhat different organization of the UI.
     - hit OK to place the array on the canvas
     - you can now move the array as a single group as you see fit
     
+---
 ## Using layers to make the test more legible
 
   - the material test grid is a group.
@@ -217,6 +219,7 @@ and provide a similar, if somewhat different organization of the UI.
   - repeat this for the top and bottom text and labels, moving them to the same "Layer 2"
   - select the new layer and rename it "text labels"
 
+---
 ## Adjust layer settings
 
   - with the new layer "text labels" selected, adjust the laser settings on the right panel:
@@ -230,6 +233,7 @@ and provide a similar, if somewhat different organization of the UI.
   - `Lines per cm`: 220
   - `Engraving Mode`: Bidirectional
   
+---
 ## Check framing and save the project 
 
   - load your test material (here a sheet of thick paper)
@@ -240,6 +244,7 @@ and provide a similar, if somewhat different organization of the UI.
   - using the top "Folder" menu, select `Save As` and give it a file name
   - in the example files, I called it `material-test-65lb-paper.xcs`
   
+---
 ### Using the F1 Ultra camera
 
  - make sure the laser is focused on the material
@@ -248,20 +253,24 @@ and provide a similar, if somewhat different organization of the UI.
    design is possible. if the material is not perfectly square you can use the angle control to   
    adjust its relative angle. 
   
+---
 ## Run the Project
 
   - Select the Process button, this takes you to the Preview page
   - if the job looks correct, make sure that the laser lid is closed and press Start
   
+---
 ### for the F1
   - the knob on the top right side of the laser should be blinking, once pressed it will start running the job.
   - if you accidentally hit the emergency shutoff button on the top left, you'll have to reconnect and restart the job.
 
+---
 ### for the F1 Ultra
   - once the job is displayed on the touch screen, press the long button on the bottom of the panel
   -- if you want to run the job again, press the button twice.
   - it is much harder to hit the emergency shutoff accidentally
   
+---
 ## Evaluate material grid
   
   - when the job is finished, it's safe to open the lid and examine the results
@@ -269,6 +278,7 @@ and provide a similar, if somewhat different organization of the UI.
     - a setting which marks the paper legibly w/o cutting through
     - the minimal setting which cleanly cuts through the paper
   
+---
 ## Material test for aluminum
 
   - we're going to use a preloaded one for that, it's the same process with these differences:
@@ -277,6 +287,7 @@ and provide a similar, if somewhat different organization of the UI.
       - technically we're just burning paint off of aluminum, so the visible laser could also be used.
         but the IR laser seems to burn it of more cleanly, and also works better on anodized material
     
+---
 # Example of importing SVG graphics
 
   - from a web browser (or Inkscape if installed)
@@ -288,10 +299,12 @@ and provide a similar, if somewhat different organization of the UI.
     - select Image import from the left toolbar and select the file graphics-files/combo-example-01.svg
     - note what the imported image looks like
     
+---
 ##  Detailed difference notes:
 
 In XCS 2, there has been positive changes on importing SVG images.
 
+---
 ### SVG in XCS 2.*
 
   - paths are imported correctly
@@ -300,6 +313,7 @@ In XCS 2, there has been positive changes on importing SVG images.
   - raster images import fine
   - objects are sorted into different layers based upon color, the SVG layer groups are ignored
 	
+---
 ### SVG in XCS 1.7.8
   
   - paths are mostly imported correctly, with the following caveats:
@@ -311,6 +325,7 @@ In XCS 2, there has been positive changes on importing SVG images.
   - objects are sorted into different layer groups based upon color
   - imported raster images are rendered fine
 
+---
 # Class Project
 
 We're going to engrave an aluminum business card using imported vector graphics. 
@@ -320,6 +335,7 @@ We will then score and cut a paper backing to hold the card.
 The project we will build looks something like this:
 ![engraved metal card on paper](./tutorial-project-example.png)
 
+---
 ## Build and Save aluminum job
 
 Here are detailed steps to setup a job for aluminum card engraving.
@@ -378,13 +394,13 @@ Here are detailed steps to setup a job for aluminum card engraving.
     - Save your Project
     
     
-
+---
 ## Build and Save paper job
 
 Here we'll build the paper frame backing. Much of the steps are similar to the prior job, so these instructions will
 concentrate more on the differences.
 
-
+---
   - prepare the project for the material size:
     - launch XCS and open project `template-files/blank-f1-project.XCS`
     - use Save As to save this project to a new location with name of your choice
@@ -401,6 +417,7 @@ concentrate more on the differences.
     - select that layer, rename it to "backgound" and ensure that Output settings are set to "ignore"
     - Save the project file
 
+---
   - setup graphics to be 'drawn' on the page
     - there are some SVG files in the `graphics-files/` directory, feel free to position ones you like on your canvas
       - keep in mind that we're going place the card into the frame so get things positioned the way you like.
@@ -414,7 +431,7 @@ concentrate more on the differences.
       - `Speed`:  (F1 30 mm/s)
       - `Pass`: 1
       
-  
+  ---
   - setup cut lines to be used to hold the card in the frame
     - using the Line tool, draw a line at a roughly 45° angle, across the top left corner of the inner rectangle
       - the intent is that this corner of the card fill slide into the line cut here, so position appropriately
@@ -432,6 +449,7 @@ concentrate more on the differences.
       - `Speed`: (F1 10 mm/s)
       - `Pass`: 1
       
+  ---
   - setup layer planning so that cut lines go last
     - in XCS 2.8, this has moved to the '...' following `Go to Process`
     - not necessary for this job, but can be useful for more complex jobs
@@ -441,7 +459,7 @@ concentrate more on the differences.
       
     - Save your Project
 
-    
+---
 # Setup and run the job
 
 Using the files from the previous section, we will run the jobs on the laser.
@@ -449,11 +467,13 @@ Using the files from the previous section, we will run the jobs on the laser.
  `example-card-and-frame-metal-only.xcs` has the metal parts enabled, and `example-card-and-frame-paper-only.xcs` has the paper
  parts enabled.)
   
+---
   - Common Laser Job steps
     - turn on the laser
     - open XCS, and wait for it to connect to the laser
     - verify that all safeties are on AND that IR Preheat is on
     
+---
   - Setup Materials
     - open lid and place material on the bed
     - focus the laser
@@ -468,6 +488,7 @@ Using the files from the previous section, we will run the jobs on the laser.
     - Close the lid, being careful not to move your material.
       - some small/light materials may need to be taped down.
       
+---
   - Run the job
     - Select the `Process` button
     - if the contents of he Preview look okay, select the `Start` button in the top right of the window.
@@ -478,13 +499,14 @@ Using the files from the previous section, we will run the jobs on the laser.
       - at least if you've put some sort of alignment tape/jig on the bed
     -  otherwise cancel the Preview and go back to the canvas.
     
+---
   - Repeat the above setups (setup materials and run the job) for the paper and metal project.
     - order does not matter, just make sure you have the correct job for the selected material!
     
-    
+---
 # Where to go from here
 
-Ona area that we have not explored in this introductory material is using engraving into metals. 
+One area that we have not explored in this introductory material is using engraving into metals. 
 While the results are promising, they take awhile - a small piece of metal can easily require 20 minutes.
 This is due to the slow speeds required, as well as the fine level of detail (lines/cm or DPI).
 
