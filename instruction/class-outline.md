@@ -43,7 +43,6 @@ operating the F1/F1 Ultra laser.
   - IR/fiber lasers are effective on stone and many metals: copper, brass, anodized aluminum, 
     stainless steel (and apparently gold and silver!)
 
-
 ---
 # Safety
 
@@ -52,6 +51,10 @@ operating the F1/F1 Ultra laser.
   - when operated behind the filter, with the lid closed, it's a Class 1 laser and will not hurt you.
   - without the filter, it's a Class 4 laser, and requires protective eyewear or shielding for any who 
     could be exposed.
+
+---
+# Safety Policy
+
   - It is against studio policy to defeat the safety switch and operate this as a Class 4 laser
     when there are other people in the studio who could be exposed. 
   - It is against studio policy to operate the laser in a Class 4 mode without using appropriate 
@@ -167,6 +170,7 @@ and provide a similar, if somewhat different organization of the UI.
   - constructing a material test grid is a good way to quickly zero in on appropriate settings
   - you can only adjust by two variables - power and speed (or dot duration and speed for bitmap)
   
+---
 # Material testing
 
 ## Standard Settings for most jobs:
@@ -189,10 +193,6 @@ and provide a similar, if somewhat different organization of the UI.
       
 ---
 ## Building a material test for paper
-
-	Note: if you find material setting ranges for the F1 visible, you can usually start with
-	higher speed, lower power percentage, and/or feweer passes to get a starting range for the
-	F1 Ultra.
 	
   - draw a circle or rectangle on canvas, typically around 5-10 mm
   - with object selected:
@@ -341,21 +341,30 @@ The project we will build looks something like this:
 Here are detailed steps to setup a job for aluminum card engraving.
 (revised for F1_ultra and XCS 2)
 
+---
+### Prepare the project
+
   - prepare the project for the material size:
-    - launch XCS and open project template-files/f1_ultra/blank-project.XCS
+    - launch XCS and open project `template-files/f1_ultra/blank-project.XCS`
     - use "save as" to save this project to a new location with name of your choice
-    - import the image file templates/template-card-86x54.SVG
+    - import the image file `templates/template-card-86x54.SVG`
     - place the image somewhere near the center of the frame (popup guides help alignment)
     - with the object select, in the RHS toolbar set the Object Setting to "Ignore"
     - rename the Layer name to "card outline"
     - save the project 
   
+  ---
+  ### Import Graphics
+
   - import a vector image into the Project
     - import one of the SVG graphics files from graphics-files/ directory
     - drag the selected object to within the card outline area and size it to fit using a corner
     - note that its on its own layer, you can rename this to "graphics"
     - change the object's settings to 'engrave' (if it's not already)
     
+  ---
+  ### Add Text Elements
+
   - add text directly
     - select the Text tool
       - this drops a big block of text ("HELLO") on your project and opens the Text panel 
@@ -364,45 +373,59 @@ Here are detailed steps to setup a job for aluminum card engraving.
     - set the text value in this panel to something ("Established 1977" with a linebreak in the example.)
      - drag the selected text to a place you want it, and adjust the size to make it fit
     - set the typeface and style to something you like, and tweak settings to get what you want.
-    - leave Spacing and Leading set to 0 for default settings
-      - Spacing is the space between characters (kerning)
-      - Leading is the space between lines
-      - both can be positive or negative values
-    - set Alignment as you prefer
-    - do NOT select "Weld" as this will permanently fix the text to thest settings
-    - it should already be in the "graphics" layer you previously created, but if not move it there.
+
+  ---
+  ### Text Setting Details
+
+  - leave Spacing and Leading set to 0 for default settings
+    - Spacing is the space between characters (kerning)
+    - Leading is the space between lines
+    - both can be positive or negative values
+  - set Alignment as you prefer
+  - do NOT select "Weld" as this will permanently fix the text to these settings
+  - it should already be in the "graphics" layer you previously created, but if not move it there.
     
+  ---
+  ### Additional Text Elements
+
   - add another text 
     - repeating the above actions, put another block of text with your name in it
     - format this text to fit into whatever space you want for the design
     - you might need to play with the leading (space beween lines)
-    
+
+---
+### Adjust Layer Settings
+
   - adjust the layer settings
     - note that the two text blocks came in as "black" color, and are assigned to layer "black"
     - we already renamed it to "graphics", but rename the layer to "text and graphics" if you like
-    - with this layer selected, use the Object Settings panel to these values:
-      - `Output` selected
-      - `Processing type`: engrave
-      - `Setting`: User-defined
-      - `Laser type`: Fiber IR
-      - `Power`: 60%  (F1  100%)
-      - `Speed`: 1000 mm/s (F1 655 mm/s)
-      - `Pass`: 1
-      - `Lines per cm`: 220
-      - `Engraving mode`: Bidirectional
-      
-    - Save your Project
+
+---
+### Text/Graphics Layer Settings
+
+- with this layer selected, use the Object Settings panel to these values:
+  - `Output` selected
+  - `Processing type`: engrave
+  - `Setting`: User-defined
+  - `Laser type`: Fiber IR
+  - `Power`: 60%  (F1  100%)  (F1 Ultra TBD <<<<)
+  - `Speed`: 1000 mm/s (F1 655 mm/s)  (F1 Ultra TBD <<<<)
+  - `Pass`: 1
+  - `Lines per cm`: 220
+  - `Engraving mode`: Bidirectional
+  
+- Save your Project
     
     
 ---
 ## Build and Save paper job
 
-Here we'll build the paper frame backing. Much of the steps are similar to the prior job, so these instructions will
-concentrate more on the differences.
+Here we'll build the paper frame backing. Much of the steps are similar to the prior job, so these instructions will concentrate more on the differences.
 
 ---
+### Prepare Paper Background
   - prepare the project for the material size:
-    - launch XCS and open project `template-files/blank-f1-project.XCS`
+    - launch XCS and open project `template-files/f1_ultra/blank-project.XCS`
     - use Save As to save this project to a new location with name of your choice
     - select the rectangle tool, and draw out a rectangle on the canvas
     - in the upper toolbar:
@@ -410,44 +433,57 @@ concentrate more on the differences.
       - type in width 112.5mm, height 92.5mm, and
       - select the lock button again to lock the dimension (proportions)
     - set the Output Settings to Ignore. 
-    - import the image template for the card to use for positioning
-      - location templates/template-card-86x54.SVG
-    - place the image on the canvas inside of the larger rectangle, roughly centered.
-    - move the smaller rectangle to the same layer as the larger one (probably Layer 1)
-    - select that layer, rename it to "backgound" and ensure that Output settings are set to "ignore"
-    - Save the project file
 
 ---
+### Prepare Card Background
+
+  - import the image template for the card to use for positioning
+    - location `templates/template-card-86x54.svg`
+  - place the image on the canvas inside of the larger rectangle, roughly centered.
+  - move the smaller rectangle to the same layer as the larger one (probably Layer 1)
+  - select that layer, rename it to "backgound" and ensure that Output settings are set to "ignore"
+  - Save the project file
+
+---
+### Add desired graphics
+
   - setup graphics to be 'drawn' on the page
     - there are some SVG files in the `graphics-files/` directory, feel free to position ones you like on your canvas
       - keep in mind that we're going place the card into the frame so get things positioned the way you like.
     - once you've imported 1 graphic, move it to a new layer, and rename that layer "line graphics"
     - import any other graphics you want, keeping them in that same layer
-    - once finished, select the layer, and apply these settings to it:
-      - `Object setting`: output
-      - `Laser type`: Blue light
-      - `Processing type`: score
-      - `Power`:  (F1 45%)
-      - `Speed`:  (F1 30 mm/s)
-      - `Pass`: 1
+
+---
+### Correct Layer Settings
+
+  - once finished, select the layer, and apply these settings to it:
+    - `Object setting`: output
+    - `Laser type`: Blue light
+    - `Processing type`: score
+    - `Power`:  (F1 45%) (F1 Ultra TBD <<<<)
+    - `Speed`:  (F1 30 mm/s)  (F1 Ultra TBD <<<<)
+    - `Pass`: 1
       
   ---
+  ### Cut Lines
+
   - setup cut lines to be used to hold the card in the frame
     - using the Line tool, draw a line at a roughly 45° angle, across the top left corner of the inner rectangle
       - the intent is that this corner of the card fill slide into the line cut here, so position appropriately
       - bounding box should be approximately 10mm x 10mm.
     - move the selected line to a new layer, rename the layer to "cut lines"
     - select the line, copy/paste to create a duplicate and drag it over to the top right corner
-    - in the top toolbar, select `Reflect` ->` Reflect horizontall`y, then move the line to an appropriate position
-    - copy/paste the top right line, drag to the lower right corner, use `Reflect` -> `Reflect vertically` and adjust position.
-    - copy/paste the bottom right line, drag to the lower left corner, use `Reflect` -> `Reflect horizontally` and adjust
-    - with the layer selected, set the Object settings to match:
-      - `Object setting`: output
-      - `Laser type`: Blue light
-      - `Processing type`: cut
-      - `Power`: (F1 40%)
-      - `Speed`: (F1 10 mm/s)
-      - `Pass`: 1
+  ---
+  - in the top toolbar, select `Reflect` ->` Reflect horizontally`, then move the line to an appropriate position
+  - copy/paste the top right line, drag to the lower right corner, use `Reflect` -> `Reflect vertically` and adjust position.
+  - copy/paste the bottom right line, drag to the lower left corner, use `Reflect` -> `Reflect horizontally` and adjust
+  - with the layer selected, set the Object settings to match:
+    - `Object setting`: output
+    - `Laser type`: Blue light
+    - `Processing type`: cut
+    - `Power`: (F1 40%)
+    - `Speed`: (F1 10 mm/s)
+    - `Pass`: 1
       
   ---
   - setup layer planning so that cut lines go last
@@ -472,6 +508,7 @@ Using the files from the previous section, we will run the jobs on the laser.
     - turn on the laser
     - open XCS, and wait for it to connect to the laser
     - verify that all safeties are on AND that IR Preheat is on
+      - IR Preheat only for F1
     
 ---
   - Setup Materials
@@ -480,13 +517,13 @@ Using the files from the previous section, we will run the jobs on the laser.
       - on F1 Ultra use the buttons on the touchpad or use Auto
       - on the F1 use the RHS knob
       - on both, make sure the red/blue dots converge on the material
-    
-    - open your project File
-    - select the Framing button - and position either the material and/or your artwork to desired position
-    - Stop Framing
-    - on F1 Ultra you can use the Refresh (camera) button to get a live preview
-    - Close the lid, being careful not to move your material.
-      - some small/light materials may need to be taped down.
+---    
+  - open your project File
+  - select the Framing button - and position either the material and/or your artwork to desired position
+  - Stop Framing
+  - on F1 Ultra you can use the Refresh (camera) button to get a live preview
+  - Close the lid, being careful not to move your material.
+    - some small/light materials may need to be taped down.
       
 ---
   - Run the job
