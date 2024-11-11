@@ -202,7 +202,7 @@ and provide a similar, if somewhat different organization of the UI.
     - from the toolbar, select Array, then Material Array
     - set power/speed based upon the material you're testing and the laser, 
       - F1:  power 10-50%, speed 10-50 mm/s
-      - F1 Ultra: TBD <<<<<<<<<<<<<
+      - F1 Ultra: power 1-50%, speed 20-80 mm/s
     - maybe set the Spacing between objects down to 2mm if you want it smaller
     - hit OK to place the array on the canvas
     - you can now move the array as a single group as you see fit
@@ -222,7 +222,7 @@ and provide a similar, if somewhat different organization of the UI.
 ---
 ## Adjust layer settings
 
-  - with the new layer "text labels" selected, adjust the laser settings on the right panel:
+  -Optional:  with the new layer "text labels" selected, adjust the laser settings on the right panel:
   - `output` radio button should be selected
   - `processing type`: engrave
   - `setting`: manual setting
@@ -408,8 +408,8 @@ Here are detailed steps to setup a job for aluminum card engraving.
   - `Processing type`: engrave
   - `Setting`: User-defined
   - `Laser type`: Fiber IR
-  - `Power`: 60%  (F1  100%)  (F1 Ultra TBD <<<<)
-  - `Speed`: 1000 mm/s (F1 655 mm/s)  (F1 Ultra TBD <<<<)
+  - `Power`: 60%  (F1  100%)  (F1 Ultra 90%)
+  - `Speed`: 1000 mm/s (F1 655 mm/s)  (F1 Ultra 2400 mm/s)
   - `Pass`: 1
   - `Lines per cm`: 220
   - `Engraving mode`: Bidirectional
@@ -460,8 +460,8 @@ Here we'll build the paper frame backing. Much of the steps are similar to the p
     - `Object setting`: output
     - `Laser type`: Blue light
     - `Processing type`: score
-    - `Power`:  (F1 45%) (F1 Ultra TBD <<<<)
-    - `Speed`:  (F1 30 mm/s)  (F1 Ultra TBD <<<<)
+    - `Power`:  (F1 45%) (F1 Ultra 50%)
+    - `Speed`:  (F1 30 mm/s)  (F1 Ultra 40 mm/s)
     - `Pass`: 1
       
   ---
@@ -481,8 +481,8 @@ Here we'll build the paper frame backing. Much of the steps are similar to the p
     - `Object setting`: output
     - `Laser type`: Blue light
     - `Processing type`: cut
-    - `Power`: (F1 40%)
-    - `Speed`: (F1 10 mm/s)
+    - `Power`: (F1 40%) (F1 Ultra 65%)
+    - `Speed`: (F1 10 mm/s) (F1 Ultra 30 mm/s)
     - `Pass`: 1
       
   ---
