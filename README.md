@@ -17,8 +17,7 @@ To download this repository as a zip archive use this link:
 
 Outline for the full tutorial:
   - local reference: ./instruction/class-outline.md
-  - [F1 Tutorial Class Outline](./instruction/class-outline.md)
-  - [F1 Ultra Tutorial Class Outline](./instruction/f1-ultra-class-outline.md)
+  - online reference: [F1 Class Outline](./instruction/class-outline.md)
 
 Software for the Intro class:
   
