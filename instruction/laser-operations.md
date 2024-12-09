@@ -52,3 +52,10 @@ footer:
 - turn off the laser
 - turn off the fans
   
+---
+## Cleanup
+
+- There may be dust or debris left beind when you're done. 
+- You need to vacuum it up and/or wipe down the area. i
+  - check the fan at the back of the laser too.
+- Ask the monitor for assistance if needed.
