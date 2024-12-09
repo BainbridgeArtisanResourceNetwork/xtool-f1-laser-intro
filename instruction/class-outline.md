@@ -28,10 +28,11 @@ operating the F1/F1 Ultra laser.
 
   - this is a 20W diode laser (blue) and a 20W fiber IR laser (green)
     - the diode laser can mark or etch many materials, and can cut many organics
-    - the fiber laser can mark or etch many metals, and can cut some thing metals,
+    - the fiber laser can mark or etch many metals, and can cut some metals,
       but it takes time. 
       - We've managed to cut aluminum, brass, and stainless steel so far.
       - we have not been able to cut copper or bronze 
+    - not fast, but it can emboss stone and brass
   - it has a 6 inch square work area, with a fixed base
   - there is an internal camera to assist in design/material alignment
   - it is currently vented through our ducting system
@@ -49,8 +50,7 @@ operating the F1/F1 Ultra laser.
   - The energy in these lasers can permanently and irreversibly damage your retinas if not operated safely.
   - both direct and diffuse reflection of this beam can do damage, faster than you can react
   - when operated behind the filter, with the lid closed, it's a Class 1 laser and will not hurt you.
-  - without the filter, it's a Class 4 laser, and requires protective eyewear or shielding for any who 
-    could be exposed.
+  - without the filter, it's a Class 4 laser, and requires protective eyewear or shielding for any who could be exposed.
 
 ---
 # Safety Policy
@@ -93,7 +93,7 @@ operating the F1/F1 Ultra laser.
 
 XCS is the Xtool Creative Space software that drives the laser. The older version only works with
 the F1 model. The newer version is required to use the F1 Ultra and is compatible with the F1 too.
-The Windows machines in the lab only have the newer version installed, because it's Windows, but
+The Windows machines in the lab only has the newer version installed, because it's Windows, but
 I've left the older instructions here for anyone still using the older version.
 
 ---
@@ -143,7 +143,7 @@ and provide a similar, if somewhat different organization of the UI.
   - vector files: SVG is the most typical
   - raster files: JPEG, PNG, GIF are typical
   - vector files can be manipulated after import
-  - raster images can be scaled, and traced after import
+  - raster images can be scaled, traced, and filtered after import
   
 ---
 # Laser settings
@@ -156,7 +156,7 @@ and provide a similar, if somewhat different organization of the UI.
     - variables: power, speed, passes (you get numbers as high as 10K passes in cut mode)
   - raster engrave - when you want to "print" a raster image using the laser
   - variables: dot duration, power, DPI, passes, bitmap mode, engraving mode
-  - image embossing 
+  - image embossing - power, speed, dpi
     
 ---
 # Material settings
@@ -326,7 +326,74 @@ In XCS 2, there has been positive changes on importing SVG images.
   - imported raster images are rendered fine
 
 ---
-# Class Project
+# Setup and run the job
+
+Using example files, we will run the jobs on the laser. The example looks like this:
+![engraved metal card on paper](./tutorial-project-example.png)
+
+---
+## Using the Example Files
+
+These project files are found in the `examples/` directory (one for each laser):
+ `example-card-and-frame-metal-only.xcs` has only the metal parts enabled, and `example-card-and-frame-paper-only.xcs` has only the paper parts enabled.)
+  
+(Instructions for generating them at the end of this deck)
+
+---
+##  Common Laser Job steps
+  - turn on the laser
+  - open XCS, and wait for it to connect to the laser
+  - verify that all safeties are on AND that IR Preheat is on
+    - IR Preheat only for F1
+    
+---
+## Setup Materials
+  - open lid and place material on the bed
+  - focus the laser
+    - on F1 Ultra use the buttons on the touchpad or use Auto
+    - on the F1 use the RHS knob
+    - on both, make sure the red/blue dots converge on the material
+---    
+## open your project File
+  - select the Framing button - and position either the material and/or your artwork to desired position
+  - Stop Framing
+  - on F1 Ultra you can use the Refresh (camera) button to get a live preview
+  - Close the lid, being careful not to move your material.
+    - some small/light materials may need to be taped down.
+      
+---
+## Run the job
+  - Select the `Process` button
+  - if the contents of he Preview look okay, select the `Start` button in the top right of the window.
+  - Press the knob on the upper right of the laser unit (or touch panel button on F1 Ultra)
+  - wait for the job to complete
+  - lift lid, remove material, and evaluate results
+  - if you want to make another one at this time, you could,
+    - at least if you've put some sort of alignment tape/jig on the bed
+  -  otherwise cancel the Preview and go back to the canvas.
+    
+---
+## Wrap Up
+  - Repeat the above setups (setup materials and run the job) for the paper and metal project.
+    - order does not matter, just make sure you have the correct job for the selected material!
+   
+  - when finished:
+    - remove all materials
+    - shut down laser
+    - if there is dirt/dust around the laser, vacuum it up
+
+---
+# Where to go from here
+
+One area that we have not explored in this introductory material is using engraving into metals. 
+While the results are promising, they take awhile - a small piece of metal can easily require 20 minutes.
+This is due to the slow speeds required, as well as the fine level of detail (lines/cm or DPI).
+
+Another area is the engraving of raster images. Here one must experiment with the dot duration and the speed, along with the
+algorithm used to establish the dot pattern. Again, these take time to process, too much for a single intro class.
+
+---
+# Example Project
 
 We're going to engrave an aluminum business card using imported vector graphics. 
 We'll add custom text to the card.
@@ -495,60 +562,6 @@ Here we'll build the paper frame backing. Much of the steps are similar to the p
       
     - Save your Project
 
----
-# Setup and run the job
-
-Using the files from the previous section, we will run the jobs on the laser.
-(If you don't have a completed project file, you can use the ones found in the `examples/` directory:
- `example-card-and-frame-metal-only.xcs` has the metal parts enabled, and `example-card-and-frame-paper-only.xcs` has the paper
- parts enabled.)
-  
----
-  - Common Laser Job steps
-    - turn on the laser
-    - open XCS, and wait for it to connect to the laser
-    - verify that all safeties are on AND that IR Preheat is on
-      - IR Preheat only for F1
-    
----
-  - Setup Materials
-    - open lid and place material on the bed
-    - focus the laser
-      - on F1 Ultra use the buttons on the touchpad or use Auto
-      - on the F1 use the RHS knob
-      - on both, make sure the red/blue dots converge on the material
----    
-  - open your project File
-  - select the Framing button - and position either the material and/or your artwork to desired position
-  - Stop Framing
-  - on F1 Ultra you can use the Refresh (camera) button to get a live preview
-  - Close the lid, being careful not to move your material.
-    - some small/light materials may need to be taped down.
-      
----
-  - Run the job
-    - Select the `Process` button
-    - if the contents of he Preview look okay, select the `Start` button in the top right of the window.
-    - Press the knob on the upper right of the laser unit (or touch panel button on F1 Ultra)
-    - wait for the job to complete
-    - lift lid, remove material, and evaluate results
-    - if you want to make another one at this time, you could,
-      - at least if you've put some sort of alignment tape/jig on the bed
-    -  otherwise cancel the Preview and go back to the canvas.
-    
----
-  - Repeat the above setups (setup materials and run the job) for the paper and metal project.
-    - order does not matter, just make sure you have the correct job for the selected material!
-    
----
-# Where to go from here
-
-One area that we have not explored in this introductory material is using engraving into metals. 
-While the results are promising, they take awhile - a small piece of metal can easily require 20 minutes.
-This is due to the slow speeds required, as well as the fine level of detail (lines/cm or DPI).
-
-Another area is the engraving of raster images. Here one must experiment with the dot duration and the speed, along with the
-algorithm used to establish the dot pattern. Again, these take time to process, too much for a single intro class.
-
+ 
 
 
