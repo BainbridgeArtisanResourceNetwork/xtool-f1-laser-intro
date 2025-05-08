@@ -91,10 +91,8 @@ operating the F1/F1 Ultra laser.
 ---
 # XCS Interface
 
-XCS is the Xtool Creative Space software that drives the laser. The older version only works with
-the F1 model. The newer version is required to use the F1 Ultra and is compatible with the F1 too.
-The Windows machines in the lab only has the newer version installed, because it's Windows, but
-I've left the older instructions here for anyone still using the older version.
+XCS is the Xtool Creative Space software that drives the laser. 
+We try to use the most recent version on the Windows machines in the lab.
 
 ---
 ## Operating Modes
@@ -112,25 +110,13 @@ I've left the older instructions here for anyone still using the older version.
     [Start Laser Embossing with XCS on the Computer](https://support.xtool.com/article/1325)
   
 ---
-## older version (XCS 17.8)
-  - top left: choose inches or mm (we'll assume mm in this tutorial)
-  - [keyboard shortcuts](https://support.xtool.com/article/132)
-  - File/Project controls (ignore the Cloud Projects tool)
-  - Left toolbar - tools for placing objects onto the main canvas
-  - Top toolbar - controls for manipulating objects on the canvas
-  - Right side - controls for manipulating laser settings
-  - Bottom right: preview (Framing) and run (Process) the job
-  - floating layers palette for grouping objects with similar settings
-  
----
 ## newer version (XCS 2.12.1 or higher)
 
-The newer versions of XCS have more of an online connection, but support the newer lasers
-and provide a similar, if somewhat different organization of the UI. 
+The newer versions of XCS have more of an online connection, and supports both the F1 and F1 Ultra  lasers
 
   - you need to open a project (either new, existing from computer, or from online) first
     - multiple projects can be open, each resides in a separate tab
-  - top tool bar is now file operations, settings, focus, camera, and material setting name.
+  - top tool bar is  file operations, settings, focus, camera, and material setting name.
   - left tool bar is the tools for placing objects on the Canvas (of which you can now have more than one)
   - layers -  the bottom left corner, for grouping items with similar settings
     - you can reorder across all layers
@@ -163,7 +149,7 @@ and provide a similar, if somewhat different organization of the UI.
 
   - Xtool material settings page is a good place to start
     - [Material Settings Page](https://www.xtool.com/pages/material-settings) 
-  - XCS 2 supports more online settings, but they're not as succinct. 
+  - XCS 2 supports  online settings, but they're not as succinct. 
     - select the material settings on the top right, and navigate to more from there
     - or you can directly access the site [EasySet Library](https://easyset.xtool.com)
   - presets can be selected, but should be confirmed for your material
@@ -174,14 +160,6 @@ and provide a similar, if somewhat different organization of the UI.
 # Material testing
 
 ## Standard Settings for most jobs:
-
-### XCS 1.7.8
-
-  - without anything selected, in the RHS panel check that these settings are on:
-    - `Laser Flat`
-    - `Material`: User defined
-    - `Thickness`: Use autofocus before init
-    - `Processing Path`: Auto planning
 
 ### XCS 2.*
 
@@ -313,18 +291,6 @@ In XCS 2, there has been positive changes on importing SVG images.
   - raster images import fine
   - objects are sorted into different layers based upon color, the SVG layer groups are ignored
 	
----
-### SVG in XCS 1.7.8
-  
-  - paths are mostly imported correctly, with the following caveats:
-    - stroke is rendered, but stroke width and fill are ignored
-    - complex vector paths (brush stroke example) will show the path artifacts 
-      - but with engrave mode the effect can be restored
-    - curved vector paths that are not closed paths usually need to be scored not engraved	  
-  - text using a font, is not rendered in XCS 1.7.8
-  - objects are sorted into different layer groups based upon color
-  - imported raster images are rendered fine
-
 ---
 # Setup and run the job
 
