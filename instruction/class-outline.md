@@ -5,6 +5,15 @@ This is a highly detailed step-by-step outline designed to guide the student thr
 operating the F1/F1 Ultra laser.
 
 ---
+# Class Outline
+
+  - Quick introduction and demonstration of laser
+  - Safety Training
+  - Software introduction
+  - Material Test Grid construction
+  - Hands-on operation - each student will operate.
+
+---
 # Intro to the F1 lasers
 
   - we currently have 2 F1 lasers, with many common attributes
@@ -91,10 +100,8 @@ operating the F1/F1 Ultra laser.
 ---
 # XCS Interface
 
-XCS is the Xtool Creative Space software that drives the laser. The older version only works with
-the F1 model. The newer version is required to use the F1 Ultra and is compatible with the F1 too.
-The Windows machines in the lab only has the newer version installed, because it's Windows, but
-I've left the older instructions here for anyone still using the older version.
+XCS is the Xtool Creative Space software that drives the laser. 
+We try to use the most recent version on the Windows machines in the lab.
 
 ---
 ## Operating Modes
@@ -102,40 +109,24 @@ I've left the older instructions here for anyone still using the older version.
   These are the modes available in both versions of XCS, with callouts specific for each machine.
   
   - Process on flat surface - laser material is a flat object
-  - Use Rotary Attachment - we don't currently have one
-  - use Conveyor (batch or large) - we don't currently have one
+  - Use Rotary Attachment or Conveor - we don't currently have one
   - Curved Material (F1 Ultra) - allows for 10cm variation with tangent angle <= 45 degrees
-    - this is more advanced usage, see 
-    [Process a Curved Material with XCS on the Computer](https://support.xtool.com/article/1324)
+    - see [Process a Curved Material with XCS on the Computer](https://support.xtool.com/article/1324)
   - Embossment (F1 Ultra) - carve into a thick material layer by layer, creating a 3D effect
-    - more advanced usage, see 
-    [Start Laser Embossing with XCS on the Computer](https://support.xtool.com/article/1325)
+    - see [Start Laser Embossing with XCS on the Computer](https://support.xtool.com/article/1325)
   
 ---
-## older version (XCS 17.8)
-  - top left: choose inches or mm (we'll assume mm in this tutorial)
-  - [keyboard shortcuts](https://support.xtool.com/article/132)
-  - File/Project controls (ignore the Cloud Projects tool)
-  - Left toolbar - tools for placing objects onto the main canvas
-  - Top toolbar - controls for manipulating objects on the canvas
-  - Right side - controls for manipulating laser settings
-  - Bottom right: preview (Framing) and run (Process) the job
-  - floating layers palette for grouping objects with similar settings
-  
----
-## newer version (XCS 2.12.1 or higher)
+## XCS 2.12.1 or higher
 
-The newer versions of XCS have more of an online connection, but support the newer lasers
-and provide a similar, if somewhat different organization of the UI. 
+The newer versions of XCS support both the F1 and F1 Ultra lasers
 
   - you need to open a project (either new, existing from computer, or from online) first
     - multiple projects can be open, each resides in a separate tab
-  - top tool bar is now file operations, settings, focus, camera, and material setting name.
-  - left tool bar is the tools for placing objects on the Canvas (of which you can now have more than one)
+  - top tool bar is  file operations, settings, focus, camera, and material setting name.
+  - left tool bar is the tools for placing objects on a Canvas
   - layers -  the bottom left corner, for grouping items with similar settings
-    - you can reorder across all layers
   - right tool bar contain the laser settings (type, power, speed, etc)
-  - when objects on the canvas are selected, tools to manipulate them are enabled at the top of the canvas
+  - when objects are selected, tools to manipulate them are enabled at the top of the canvas
   
 ---
 # Artwork Supported
@@ -149,7 +140,7 @@ and provide a similar, if somewhat different organization of the UI.
 # Laser settings
 
   - vector scoring - draw the outline of the objects on canvas - usually very quickly
-    - variables: power, speed, passes
+    - variables: power, speed, passes (limited number)
   - vector engraving - draw and fill the objects on canvas - measured in lines/cm so slower
     - variables: power, speed, passes, lines/cm
   - vector cut - when you want to cut through the material
@@ -163,7 +154,7 @@ and provide a similar, if somewhat different organization of the UI.
 
   - Xtool material settings page is a good place to start
     - [Material Settings Page](https://www.xtool.com/pages/material-settings) 
-  - XCS 2 supports more online settings, but they're not as succinct. 
+  - XCS 2 supports  online settings, but they're not as succinct. 
     - select the material settings on the top right, and navigate to more from there
     - or you can directly access the site [EasySet Library](https://easyset.xtool.com)
   - presets can be selected, but should be confirmed for your material
@@ -174,14 +165,6 @@ and provide a similar, if somewhat different organization of the UI.
 # Material testing
 
 ## Standard Settings for most jobs:
-
-### XCS 1.7.8
-
-  - without anything selected, in the RHS panel check that these settings are on:
-    - `Laser Flat`
-    - `Material`: User defined
-    - `Thickness`: Use autofocus before init
-    - `Processing Path`: Auto planning
 
 ### XCS 2.*
 
@@ -201,9 +184,7 @@ and provide a similar, if somewhat different organization of the UI.
       - F1 Ultra power ot 25%, speed to 1000 mm/s
     - from the toolbar, select Array, then Material Array
     - set power/speed based upon the material you're testing and the laser, 
-      - F1:  power 10-50%, speed 10-50 mm/s
-      - F1 Ultra: power 1-50%, speed 20-80 mm/s
-    - maybe set the Spacing between objects down to 2mm if you want it smaller
+      - F1: 10-50% @10-50 mm/s; F1 Ultra 10-50% @20-80 mm/s
     - hit OK to place the array on the canvas
     - you can now move the array as a single group as you see fit
     
@@ -267,7 +248,7 @@ and provide a similar, if somewhat different organization of the UI.
 ---
 ### for the F1 Ultra
   - once the job is displayed on the touch screen, press the long button on the bottom of the panel
-  -- if you want to run the job again, press the button twice.
+  - if you want to run the job again, press the button twice.
   - it is much harder to hit the emergency shutoff accidentally
   
 ---
@@ -284,8 +265,7 @@ and provide a similar, if somewhat different organization of the UI.
   - we're going to use a preloaded one for that, it's the same process with these differences:
     - use vector engrave mode
     - use IR laser mode
-      - technically we're just burning paint off of aluminum, so the visible laser could also be used.
-        but the IR laser seems to burn it of more cleanly, and also works better on anodized material
+      - technically we're just burning paint off of aluminum, so the visible laser could also be used. But the IR laser seems to burn it of more cleanly, and also works better on anodized material
     
 ---
 # Example of importing SVG graphics
@@ -314,18 +294,6 @@ In XCS 2, there has been positive changes on importing SVG images.
   - objects are sorted into different layers based upon color, the SVG layer groups are ignored
 	
 ---
-### SVG in XCS 1.7.8
-  
-  - paths are mostly imported correctly, with the following caveats:
-    - stroke is rendered, but stroke width and fill are ignored
-    - complex vector paths (brush stroke example) will show the path artifacts 
-      - but with engrave mode the effect can be restored
-    - curved vector paths that are not closed paths usually need to be scored not engraved	  
-  - text using a font, is not rendered in XCS 1.7.8
-  - objects are sorted into different layer groups based upon color
-  - imported raster images are rendered fine
-
----
 # Setup and run the job
 
 Using example files, we will run the jobs on the laser. The example looks like this:
@@ -343,8 +311,8 @@ These project files are found in the `examples/` directory (one for each laser):
 ##  Common Laser Job steps
   - turn on the laser
   - open XCS, and wait for it to connect to the laser
-  - verify that all safeties are on AND that IR Preheat is on
-    - IR Preheat only for F1
+  - verify that all safeties are on 
+    - F1 only - ensure IR Preheat is on
     
 ---
 ## Setup Materials
@@ -381,6 +349,7 @@ These project files are found in the `examples/` directory (one for each laser):
     - remove all materials
     - shut down laser
     - if there is dirt/dust around the laser, vacuum it up
+    - if the fan at the rear of the laser is dirty, vacuum it too.
 
 ---
 # Where to go from here
@@ -395,18 +364,13 @@ algorithm used to establish the dot pattern. Again, these take time to process, 
 ---
 # Example Project
 
-We're going to engrave an aluminum business card using imported vector graphics. 
-We'll add custom text to the card.
-We will then score and cut a paper backing to hold the card.
-
-The project we will build looks something like this:
+We're going to engrave an aluminum business card using imported vector graphics.  We'll add custom text to the card, then score and cut a paper backing to hold the card. 
 ![engraved metal card on paper](./tutorial-project-example.png)
 
 ---
 ## Build and Save aluminum job
 
 Here are detailed steps to setup a job for aluminum card engraving.
-(revised for F1_ultra and XCS 2)
 
 ---
 ### Prepare the project
