@@ -5,6 +5,15 @@ This is a highly detailed step-by-step outline designed to guide the student thr
 operating the F1/F1 Ultra laser.
 
 ---
+# Class Outline
+
+  - Quick introduction and demonstration of laser
+  - Safety Training
+  - Software introduction
+  - Material Test Grid construction
+  - Hands-on operation - each student will operate.
+
+---
 # Intro to the F1 lasers
 
   - we currently have 2 F1 lasers, with many common attributes
